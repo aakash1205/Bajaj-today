@@ -19,7 +19,7 @@ function App() {
     try {
       // Validate input as JSON
       const jsonData = JSON.parse(inputJSON);
-      const response = await axios.post('http://localhost:4000/bfhl', { data: jsonData.data });
+      const response = await axios.post('https://bajaj-today-1.onrender.com/bfhl', { data: jsonData.data });
       setResponseData(response.data);
       setLoading(false);
     } catch (err) {
